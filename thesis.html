@@ -21,7 +21,7 @@
 	  })();
 
 	</script>
-	
+
 	<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
 	       'version':'1','packages':['timeline']}]}"></script>
 	<script type="text/javascript">
@@ -43,9 +43,9 @@
 		[ 'Chapter 2 - SWDA, TAL',		'Finalize Design of TAL',  	new Date(2014, 5,  2), new Date(2014, 5,  8)],
 	    [ 'IEEE Big Data Paper',		'The first draft',   		new Date(2014, 5,  2), new Date(2014, 5,  8)],
 		[ 'IEEE Big Data Paper',		'Revision after feedbacks',	new Date(2014, 5,  9), new Date(2014, 5, 15)],
-		[ 'IEEE Big Data Paper',		'Draft sent to China',		new Date(2014, 5, 19), new Date(2014, 5, 22)],	
-		[ 'IEEE Big Data Paper',		'Process advices',			new Date(2014, 5, 23), new Date(2014, 5, 29)],	
-		[ 'IEEE Big Data Paper',		'Paper submission',			new Date(2014, 5, 30), new Date(2014, 5, 31)],	
+		[ 'IEEE Big Data Paper',		'Draft sent to China',		new Date(2014, 5, 19), new Date(2014, 5, 22)],
+		[ 'IEEE Big Data Paper',		'Process advices',			new Date(2014, 5, 23), new Date(2014, 5, 29)],
+		[ 'IEEE Big Data Paper',		'Paper submission',			new Date(2014, 5, 30), new Date(2014, 5, 31)],
 	    [ 'Chapter 3 - Relevance',		'Rewriting with papers',    new Date(2014, 4, 12), new Date(2014, 4, 18)],
 	    [ 'Chapter 4 - Redundancy',		'Rewriting with papers',  	new Date(2014, 4, 19), new Date(2014, 4, 25)],
 	    [ 'Chapter 5 - Diversity',		'Rewriting with papers',	new Date(2014, 4, 19), new Date(2014, 4, 25)],
@@ -66,7 +66,7 @@
 		[ 'Twinder / TAL',				'Release as software',		new Date(2014, 5, 19), new Date(2014, 5, 22)]]);
 
 	  chart.draw(dataTable);
-	  
+
 	  var containerom = document.getElementById('thesis.official');
 	  var chartom = new google.visualization.Timeline(containerom);
 
@@ -76,20 +76,23 @@
 	  dataTableom.addColumn({ type: 'date', id: 'Start' });
 	  dataTableom.addColumn({ type: 'date', id: 'End' });
 	  dataTableom.addRows([
-		[ 'Official matters',			'Informal Review',			new Date(2014, 5, 30), new Date(2014, 6, 18)],
-	    [ 'Official matters',			'Beadle PROM 3',			new Date(2014, 6, 18), new Date(2014, 6, 19)],
-		[ 'Official matters',			'Final feedbacks to thesis',new Date(2014, 7,  7), new Date(2014, 7,  8)],
-		[ 'Official matters',			'Get back from committee',	new Date(2014, 7, 21), new Date(2014, 7, 22)],
-		[ 'Official matters',			'Propositions',				new Date(2014, 7, 16), new Date(2014, 7, 22)],
-		[ 'Official matters',			'Distribute copies',		new Date(2014, 8, 17), new Date(2014, 8, 18)],
-		[ 'Official matters',			'Meet Chairman',			new Date(2014, 8, 17), new Date(2014, 8, 18)],
-	    [ 'Official matters',			'Defense',					new Date(2014, 9, 2),  new Date(2014, 9, 3)]]);
+	  [ 'Official matters',      'Beadle PROM 3,4,5',    new Date(2014, 6,  1), new Date(2014, 6,  8)],
+    [ 'Official matters',			'Informal Review',		  new Date(2014, 6,  8), new Date(2014, 7, 19)],
+		[ 'Official matters',			'Processing feedbacks', new Date(2014, 7, 19), new Date(2014, 7, 26)],
+		[ 'Official matters',			'Back to committee',    new Date(2014, 7, 26), new Date(2014, 7, 27)],
+    [ 'Official matters',			'Formal Review',        new Date(2014, 7, 27), new Date(2014, 9,  3)],
+    [ 'Official matters',			'Propositions',         new Date(2014, 7, 27), new Date(2014, 8,  7)],
+    [ 'Official matters',			'Buffer',               new Date(2014, 9,  3), new Date(2014, 9, 10)],
+    [ 'Official matters',			'All set & PROM 6',     new Date(2014, 9, 10), new Date(2014, 9, 11)],
+		[ 'Official matters',			'Distribute copies',    new Date(2014, 9, 31), new Date(2014,10,  1)],
+		[ 'Official matters',			'Meet Chairman',        new Date(2014, 9, 31), new Date(2014,10,  1)],
+	  [ 'Official matters',			'Defense',              new Date(2014,10, 14), new Date(2014,10, 15)]]);
 
 	  chartom.draw(dataTableom);
 	}
 	</script>
-	
-	
+
+
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <style>
@@ -135,13 +138,13 @@
           </div>
         </div>
       </div>
-	  
+
       <div class="container">
   		<div class="row">
 			<h4>Timeline - Thesis Writing</h4>
   			<div id="thesis.progress" style="width: 1200px; height: 600px;"></div>
 			<p></p>
-			<h4>Timeline - Official Matter - Based on D-Day of October 3rd, 2014</h4>
+			<h4>Timeline - Official Matter - Based on D-Day of November 14th, 2014</h4>
   			<div id="thesis.official" style="width: 1200px; height: 200px;"></div>
   		</div>
 	  </div>
