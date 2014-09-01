@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ke Tao, Ph.D. student at TU Delft</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The homepage of Ke Tao, a Ph.D. student at TU Delft">
+    <meta name="author" content="Ke Tao <k.tao@tudelft.nl>">
+
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-9727756-4']);
+	  _gaq.push(['_setDomainName', 'ktao.nl']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	
+	<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+	       'version':'1','packages':['timeline']}]}"></script>
+	<script type="text/javascript">
+	google.setOnLoadCallback(drawChart);
+	function drawChart() {
+
+	  var container = document.getElementById('thesis.progress');
+	  var chart = new google.visualization.Timeline(container);
+
+	  var dataTable = new google.visualization.DataTable();
+	  dataTable.addColumn({ type: 'string', id: 'Item' });
+	  dataTable.addColumn({ type: 'string', id: 'Job' });
+	  dataTable.addColumn({ type: 'date', id: 'Start' });
+	  dataTable.addColumn({ type: 'date', id: 'End' });
+	  dataTable.addRows([
+	    [ 'Chapter 2 - SWDA, TAL',		'Implementation Section',	new Date(2014, 4, 12), new Date(2014, 4, 18)],
+	    [ 'Chapter 2 - SWDA, TAL',		'Introduction Section',     new Date(2014, 4, 19), new Date(2014, 4, 25)],
+	    [ 'Chapter 2 - SWDA, TAL',		'Related Work Section',  	new Date(2014, 4, 26), new Date(2014, 5,  1)],
+		[ 'Chapter 2 - SWDA, TAL',		'Finalize Design of TAL',  	new Date(2014, 5,  2), new Date(2014, 5,  8)],
+	    [ 'IEEE Big Data Paper',		'The first draft',   		new Date(2014, 5,  2), new Date(2014, 5,  8)],
+		[ 'IEEE Big Data Paper',		'Revision after feedbacks',	new Date(2014, 5,  9), new Date(2014, 5, 15)],
+		[ 'IEEE Big Data Paper',		'Draft sent to China',		new Date(2014, 5, 19), new Date(2014, 5, 22)],	
+		[ 'IEEE Big Data Paper',		'Process advices',			new Date(2014, 5, 23), new Date(2014, 5, 29)],	
+		[ 'IEEE Big Data Paper',		'Paper submission',			new Date(2014, 5, 30), new Date(2014, 5, 31)],	
+	    [ 'Chapter 3 - Relevance',		'Rewriting with papers',    new Date(2014, 4, 12), new Date(2014, 4, 18)],
+	    [ 'Chapter 4 - Redundancy',		'Rewriting with papers',  	new Date(2014, 4, 19), new Date(2014, 4, 25)],
+	    [ 'Chapter 5 - Diversity',		'Rewriting with papers',	new Date(2014, 4, 19), new Date(2014, 4, 25)],
+	    [ 'Chapter 6 - Twitcident',     'Rewriting with papers',    new Date(2014, 4, 26), new Date(2014, 5,  1)],
+		[ 'Chapter 1 - Introduction',   'Writing',    				new Date(2014, 5,  2), new Date(2014, 5,  8)],
+		[ 'Chapter 7 - Conclusion',     'Writing',					new Date(2014, 5,  9), new Date(2014, 5, 15)],
+		[ 'Thesis overall',				'Pseudo-code for Chap2-5',  new Date(2014, 5,  2), new Date(2014, 5,  8)],
+		[ 'Thesis overall',				'Related Works updates',	new Date(2014, 5,  9), new Date(2014, 5, 15)],
+		[ 'Thesis overall',				'Coherence check',			new Date(2014, 5, 16), new Date(2014, 5, 18)],
+		[ 'Thesis overall',				'Miscellaneous',			new Date(2014, 5, 19), new Date(2014, 5, 22)],
+		[ 'Thesis overall',				'Process internal advices',	new Date(2014, 5, 19), new Date(2014, 5, 22)],
+		[ 'Thesis overall',				'Draft for informal review',new Date(2014, 5, 23), new Date(2014, 5, 29)],
+	    [ 'Twinder / TAL',				'Integrate Relevance',		new Date(2014, 4, 12), new Date(2014, 4, 18)],
+		[ 'Twinder / TAL',				'Diversification',			new Date(2014, 4, 19), new Date(2014, 4, 25)],
+		[ 'Twinder / TAL',				'Web, Results Rendering',	new Date(2014, 4, 26), new Date(2014, 5,  1)],
+		[ 'Twinder / TAL',				'Debug, prepare release',	new Date(2014, 5,  2), new Date(2014, 5,  8)],
+		[ 'Twinder / TAL',				'Start running demo system',new Date(2014, 5,  9), new Date(2014, 5, 15)],
+		[ 'Twinder / TAL',				'Release as software',		new Date(2014, 5, 19), new Date(2014, 5, 22)]]);
+
+	  chart.draw(dataTable);
+	  
+	  var containerom = document.getElementById('thesis.official');
+	  var chartom = new google.visualization.Timeline(containerom);
+
+	  var dataTableom = new google.visualization.DataTable();
+	  dataTableom.addColumn({ type: 'string', id: 'Item' });
+	  dataTableom.addColumn({ type: 'string', id: 'Job' });
+	  dataTableom.addColumn({ type: 'date', id: 'Start' });
+	  dataTableom.addColumn({ type: 'date', id: 'End' });
+	  dataTableom.addRows([
+		[ 'Official matters',			'Informal Review',			new Date(2014, 5, 30), new Date(2014, 6, 18)],
+	    [ 'Official matters',			'Beadle PROM 3',			new Date(2014, 6, 18), new Date(2014, 6, 19)],
+		[ 'Official matters',			'Final feedbacks to thesis',new Date(2014, 7,  7), new Date(2014, 7,  8)],
+		[ 'Official matters',			'Get back from committee',	new Date(2014, 7, 21), new Date(2014, 7, 22)],
+		[ 'Official matters',			'Propositions',				new Date(2014, 7, 16), new Date(2014, 7, 22)],
+		[ 'Official matters',			'Distribute copies',		new Date(2014, 8, 17), new Date(2014, 8, 18)],
+		[ 'Official matters',			'Meet Chairman',			new Date(2014, 8, 17), new Date(2014, 8, 18)],
+	    [ 'Official matters',			'Defense',					new Date(2014, 9, 2),  new Date(2014, 9, 3)]]);
+
+	  chartom.draw(dataTableom);
+	}
+	</script>
+	
+	
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand">Ke Tao</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="thesis.html">PhD Thesis</a></li>
+				<li><a href="pdf/cv.pdf">CV</a></li>
+                <li><a href="index.html#about">About</a></li>
+  			  	<li><a href="index.html#publications">Publications</a></li>
+  			  	<li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </div>
+      </div>
+	  
+      <div class="container">
+  		<div class="row">
+			<h4>Timeline - Thesis Writing</h4>
+  			<div id="thesis.progress" style="width: 1200px; height: 600px;"></div>
+			<p></p>
+			<h4>Timeline - Official Matter - Based on D-Day of October 3rd, 2014</h4>
+  			<div id="thesis.official" style="width: 1200px; height: 200px;"></div>
+  		</div>
+	  </div>
+  </body>
+</html>
