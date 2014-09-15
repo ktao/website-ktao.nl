@@ -76,17 +76,17 @@
 	  dataTableom.addColumn({ type: 'date', id: 'Start' });
 	  dataTableom.addColumn({ type: 'date', id: 'End' });
 	  dataTableom.addRows([
-	  [ 'Official matters',      'Beadle PROM 3,4,5',    new Date(2014, 6,  1), new Date(2014, 6,  8)],
-    [ 'Official matters',			'Informal Review',		  new Date(2014, 6,  8), new Date(2014, 7, 19)],
-		[ 'Official matters',			'Processing feedbacks', new Date(2014, 7, 19), new Date(2014, 7, 26)],
-		[ 'Official matters',			'Back to committee',    new Date(2014, 7, 26), new Date(2014, 7, 27)],
-    [ 'Official matters',			'Formal Review',        new Date(2014, 7, 27), new Date(2014, 9,  3)],
-    [ 'Official matters',			'Propositions',         new Date(2014, 7, 27), new Date(2014, 8,  7)],
-    [ 'Official matters',			'Buffer',               new Date(2014, 9,  3), new Date(2014, 9, 10)],
-    [ 'Official matters',			'All set & PROM 6',     new Date(2014, 9, 10), new Date(2014, 9, 11)],
-		[ 'Official matters',			'Distribute copies',    new Date(2014, 9, 31), new Date(2014,10,  1)],
-		[ 'Official matters',			'Meet Chairman',        new Date(2014, 9, 31), new Date(2014,10,  1)],
-	  [ 'Official matters',			'Defense',              new Date(2014,10, 14), new Date(2014,10, 15)]]);
+	  [ 'Official matters',     'Beadle PROM 3',        new Date(2014, 6, 23), new Date(2014, 6, 24)],
+    [ 'Official matters',			'Informal Review',      new Date(2014, 6, 30), new Date(2014, 8, 10)], <!-- Finished -->
+		[ 'Official matters',			'Processing feedbacks', new Date(2014, 8, 10), new Date(2014, 8, 17)], <!-- 13th week before D-Day -->
+		[ 'Official matters',			'Spreading draft',      new Date(2014, 8, 16), new Date(2014, 8, 17)], <!-- 12 weeks before D-Day -->
+    [ 'Official matters',			'Formal Review',        new Date(2014, 8, 16), new Date(2014, 9, 21)], <!--  5 weeks, finish by 7th week before D-Day -->
+    [ 'Official matters',			'Propositions',         new Date(2014, 8, 19), new Date(2014, 8, 25)],
+    [ 'Official matters',			'Buffer',               new Date(2014, 9, 21), new Date(2014, 9, 28)], <!-- 1 weeks buffer -->
+    [ 'Official matters',			'All set & PROM 6',     new Date(2014, 9, 28), new Date(2014,10,  5)], <!-- 6 weeks before D-Day -->
+		[ 'Official matters',			'Distribute copies',    new Date(2014,10, 25), new Date(2014,10, 26)], <!-- 2 weeks before D-Day -->
+		[ 'Official matters',			'Meet Chairman',        new Date(2014,10, 25), new Date(2014,10, 26)], <!-- 2 weeks before D-Day -->
+	  [ 'Official matters',			'Defense',              new Date(2014,11,  9), new Date(2014,11, 10)]]);
 
 	  chartom.draw(dataTableom);
 	}
@@ -144,7 +144,7 @@
 			<h4>Timeline - Thesis Writing</h4>
   			<div id="thesis.progress" style="width: 1200px; height: 600px;"></div>
 			<p></p>
-			<h4>Timeline - Official Matter - Based on D-Day of November 14th, 2014</h4>
+			<h4>Timeline - Official Matter - Based on D-Day of December 9th, 2014</h4>
   			<div id="thesis.official" style="width: 1200px; height: 200px;"></div>
   		</div>
 	  </div>
